@@ -2,3 +2,10 @@ node/node_modules
 vue/node_modules
 react/node_modules
 web-components/node_modules
+
+
+
+node/coverage
+vue/coverage
+react/coverage
+web-components/coverage
