@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "testw" : "jest --watch"
+    "testw" : "jest --watch",
+    "cover" : "jest --coverage"
   },
   "keywords": [],
   "author": "",
