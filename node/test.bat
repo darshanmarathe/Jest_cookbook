@@ -1,1 +1,3 @@
-nodemon -x "cls & npm run test" 
+@REM nodemon -x "cls & npm run test" 
+nodemon -x "cls & npm run testfile" 
+  

@@ -25,7 +25,6 @@ describe('Mocking external libs for example axios', () => {
     
     test(' should ', async () => {
         let users = await GetUsers()
-        console.log(users.data)
-
+      
     });
 });
