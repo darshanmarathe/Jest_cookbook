@@ -1,5 +1,5 @@
-import { createAnalyser } from '@/util/Util';
-import AppConf from '../../conf/AppConf';
+const { createAnalyser } = require('./Utils');
+const AppConf = require('./__mock__/appconf')
 
 const BUFFER_SIZE = AppConf.volumeIndicator.bufferSize;
 const CHECK_RATE = AppConf.volumeIndicator.checkRate;
@@ -21,7 +21,7 @@ const HIGH_EVENT = 'high';
  * low - Volume is low
  * mute - no volume has been detected on the stream yet
  */
-export class VolumeIndicator {
+ class VolumeIndicator {
   // Stream management
   stream = null;
   analyser = null;
@@ -210,4 +210,9 @@ function _calculateAvgVariance(dataArray) {
     total += Math.abs(dataArray[i] - 127);
   }
   return total / bufferLength;
+}
+
+
+module.exports = {
+  VolumeIndicator
 }
